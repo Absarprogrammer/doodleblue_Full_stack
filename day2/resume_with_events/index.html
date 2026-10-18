@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show{
+            background-color: red;
+        }
+        .hide{
+            background-color: green;
+        }
+        
+
+    </style>
+</head>
+<body id="bdy">
+    <button id="count">count</button>
+    <label id="plus">Counter:0</label>
+    <button id="minus">minus</button>
+    <button id="reset">reset</button>
+    <button id="show">show</button>
+    
+    <script>
+        var count=0;
+        var boolean;
+        const btn=document.getElementById('count');
+        const label=document.getElementById('plus');
+        const minus=document.getElementById('minus');
+        const reset=document.getElementById('reset');
+        const hide=document.getElementById('show');
+        const bg=document.getElementById('bdy');
+        btn.addEventListener('click',function(){
+            count=count+1;
+            label.textContent=`Conunter : ${count}`;
+
+        });
+        minus.addEventListener('click',function(){
+            count=count-1;
+            label.textContent=`Counter:${count}`;
+        });
+        reset.addEventListener('click',function(){
+            count=0;
+            label.textContent=`Counter:${count}`;
+
+        })
+        hide.addEventListener('click',function(){
+            boolean=!boolean;
+            label.textContent=`${boolean?`Counter: ${count}`:'Counter is hidden'}`;
+            hide.textContent=`${boolean?'show':'hide'}`;
+            label.className=`${boolean?'show':'hide'}`;
+            bg.className=`${boolean?'show':'hide'}`;
+        })
+
+    </script>
+
+</body>
+</html>
