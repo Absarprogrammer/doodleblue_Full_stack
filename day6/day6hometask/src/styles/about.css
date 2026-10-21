@@ -1,0 +1,53 @@
+.container {
+  width: 1400px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.container .card {
+  width: 100%;
+  padding: 40px;
+  border-left: 5px solid goldenrod;
+  background: #FFFAF2;
+  color: #3E3525;
+  
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(80, 60, 20, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(80, 60, 20, 0.12);
+}
+
+.container .card p {
+  font-size: 25px;
+  line-height: 1.9;
+  color: #655D50;
+  margin: 0 0 24px;
+}
+.actions{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.actions button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  background: goldenrod;
+  color: white;
+  border: 2px solid goldenrod;
+  border-radius: 8px;
+  font-size: large;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.actions button:hover {
+  background: #B8860B;
+  border-color: #B8860B;
+}

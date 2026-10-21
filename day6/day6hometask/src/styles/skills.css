@@ -1,0 +1,92 @@
+.skills-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #3E3525;
+}
+
+.skills-page p {
+  /* max-width: 650px; */
+  color: #655D50;
+  font-size: 25px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.skills-card {
+  padding: 28px;
+  background: #FFFAF2;
+  
+  border-radius: 14px;
+  width: 300px;
+  border-left: 5px solid goldenrod;
+  box-shadow: 0 6px 20px rgba(80, 60, 20, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgba(80, 60, 20, 0.12);
+}
+
+.skills-card h3 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #8A6815;
+}
+
+.skills-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  
+}
+
+.skills-card li {
+  padding: 9px 14px;
+  margin: 20px;
+  background: #F3EBDD;
+  border: 1px solid #E5D8C3;
+  border-radius: 8px;
+  color: #4A3D25;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.skills-card2 img {
+  width: 100%;
+  height: 490px;
+  border: #3E3525 1px solid;
+  border-radius: 18px;
+transition: transform 0.3s ease;
+}
+.skills-card2:hover{
+    transform: translateY(5);
+}
+
+.skills-page .back-btn {
+  margin-top: 30px;
+  padding: 12px 28px;
+  background: goldenrod;
+  color: white;
+  border: 2px solid goldenrod;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.skills-page .back-btn:hover {
+  background: #B8860B;
+  border-color: #B8860B;
+}

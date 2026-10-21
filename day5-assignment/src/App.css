@@ -12,14 +12,9 @@ body,
 }
 
 body {
-  background: #686262;
+  background: linear-gradient(90deg ,black,#330000, #b90303);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-button,
-input {
-  font: inherit;
 }
 
 .container {
@@ -197,23 +192,6 @@ body.light-mode .exercise-preview-info p {
   color: #555;
 }
 
-@media (max-width: 600px) {
-  .exercise-preview {
-    grid-template-columns: 1fr;
-  }
-
-  .exercise-preview img {
-    height: 240px;
-  }
-
-  .exercise-card h2 {
-    font-size: 20px;
-  }
-
-  .exercise-preview-info h3 {
-    margin-top: 8px;
-  }
-}
 .page {
   position: fixed;
   bottom: 0;
@@ -288,55 +266,7 @@ body.light-mode .page {
   background: #e5e5e5;
   color: #171717;
 }
-
-@media (max-width: 1000px) {
-  .grids {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-  }
-}
-
-@media (max-width: 650px) {
-  .container {
-    padding: 125px 12px 85px;
-  }
-
-  .search {
-    gap: 8px;
-    padding: 10px;
-  }
-
-  .search input {
-    flex-basis: 100%;
-    min-width: 0;
-  }
-
-  .search button {
-    flex: 1;
-    padding: 10px 8px;
-    font-size: 13px;
-  }
-
-  .grids {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .exercise-card {
-    padding: 15px;
-  }
-
-  .page {
-    gap: 10px;
-    padding: 12px 6px;
-  }
-
-  .page button {
-    padding: 9px 10px;
-    font-size: 13px;
-  }
-
-  .page h3 {
-    font-size: 13px;
-  }
+ 
+.error{
+  align-items: center;
 }

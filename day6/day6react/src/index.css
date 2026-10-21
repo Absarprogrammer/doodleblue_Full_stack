@@ -1,0 +1,13 @@
+*{
+  text-align: center;
+}
+.body{
+  align-items: center;
+  background-color: antiquewhite;
+  color: aqua;
+  justify-content: center;
+  text-align: center;
+}
+.app{
+  font-size: larger;
+}

@@ -1,0 +1,89 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 46px;
+}
+.card {
+  width: 1500px;
+  padding: 22px;
+  background: #FFFAF2;
+  color: #3E3525;
+  border-left: 5px solid goldenrod;
+  
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(80, 60, 20, 0.12);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  text-align: center;
+  color: #B8860B;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card h3 {
+  margin: 0 0 22px;
+  text-align: center;
+  font-size: 22px;
+  color: #4A3D25;
+}
+.card p{
+    font-size: 24px;
+}
+.preview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+}
+
+.preview img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background: #F3EBDD;
+  border-radius: 10px;
+}
+
+.preview-info {
+  min-width: 0;
+}
+
+.preview-info ul {
+  padding-left: 20px;
+  color: #655D50;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+.preview-info li{
+    font-size: larger;
+}
+.preview-info button {
+  width: 100%;
+  padding: 12px 16px;
+  background: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.preview-info button:hover {
+  background: #B8860B;
+}
+
+

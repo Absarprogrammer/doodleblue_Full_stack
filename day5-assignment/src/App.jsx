@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Loading from "./components/Loading";
+import Loading from "./components/Loading.jsx";
 import MyList from "./components/MyList";
 import ExerciseDetails from "./components/ExerciseDetails";
 
@@ -12,7 +12,7 @@ const App = () => {
 
   const[search,setSearch]=useState("");
   const[currentPage,setCurrentPage]=useState(1);
-  const exercisesPage=21;
+  const exercisesPage=20;
 
   const[selected,setSelected]=useState(null);
   const[showlist,setShowlist]=useState(false);
@@ -128,7 +128,7 @@ return (
         {showlist ? "All Exercises" : `My List (${mytasks.length})`}
       </button>
       <button onClick={toggleTheme}>
-  {mode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+  {mode ? "🌙 Dark Mode" : "☀️ light Mode"}
 </button>
     </div>
 
@@ -151,7 +151,7 @@ return (
           {filteredData.length === 0 ? (
             <span>No exercises found.</span>
           ) : (currentexercise.map((item) => (
-  <article className="exercise-card" key={item.id}>
+  <div className="exercise-card" key={item.id}>
     <p className="eyebrow">EXERCISE LIBRARY</p>
 
     <h2>{item.name}</h2>
@@ -190,7 +190,7 @@ return (
       </button>
       </div>
     </div>
-  </article>
+  </div>
 )))
 }</div>
 
