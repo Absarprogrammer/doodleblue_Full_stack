@@ -7,7 +7,6 @@ const Sidebar=() =>{
       <h2>Mohammed Absar</h2>
     <img src={photo} alt="Profile"/><br/><br/>
       <div>
-        <button onClick={()=>navigate('/home')} >Home</button><br/><br/>
         <button onClick={()=>navigate("/about")} >About</button><br/><br/>
         <button onClick={()=>navigate("/projects")} >Projects</button><br/><br/>
         <button onClick={()=>navigate("/skills")}>Skill</button><br/><br/>

@@ -5,7 +5,6 @@ import './index.css'
 import App from './App.jsx'
 
 import Sidebar from './pages/sidebar.jsx'
-import Home from './pages/home.jsx'
 import About from './pages/about.jsx'
 import Skill from './pages/skills.jsx'
 import Project from './pages/projects.jsx'
@@ -22,7 +21,6 @@ createRoot(document.getElementById('root')).render(
     <div className='page-content'>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skill />} />
         <Route path="/projects" element={<Project />} />
