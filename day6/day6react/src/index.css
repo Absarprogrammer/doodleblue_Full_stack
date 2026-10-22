@@ -11,3 +11,9 @@
 .app{
   font-size: larger;
 }
+ .app.light{
+  background-color: aqua;
+}
+.app.dark{
+  background-color: red;
+}
